@@ -1,0 +1,54 @@
+# Instruções para conectar o repositório ao GitHub
+
+Siga os passos abaixo para conectar seu repositório local ao GitHub:
+
+## 1. Crie um novo repositório no GitHub
+
+1. Acesse o site do GitHub (https://github.com)
+2. Faça login na sua conta
+3. Clique no botão "+" no canto superior direito e selecione "New repository"
+4. Preencha o nome do repositório como "chatbot-ollama-ts"
+5. Adicione uma descrição opcional
+6. Mantenha o repositório como público (ou selecione privado se preferir)
+7. NÃO inicialize o repositório com README, .gitignore ou License
+8. Clique em "Create repository"
+
+## 2. Conecte seu repositório local ao GitHub
+
+Depois de criar o repositório no GitHub, você verá uma página com instruções. Siga estas instruções para conectar seu repositório local:
+
+```bash
+# Isso já foi feito:
+# git init
+# git add .
+# git commit -m "Commit inicial"
+# git branch -M main
+
+# Adicione o repositório remoto
+git remote add origin https://github.com/SEU-USUARIO/chatbot-ollama-ts.git
+
+# Envie seus commits para o GitHub
+git push -u origin main
+```
+
+Substitua "SEU-USUARIO" pelo seu nome de usuário do GitHub.
+
+## 3. Verificar a conexão
+
+Após executar os comandos acima, atualize a página do seu repositório no GitHub e você deverá ver todos os arquivos do seu projeto.
+
+## 4. Para futuros commits
+
+Depois que a conexão estiver estabelecida, você poderá atualizar seu repositório no GitHub com:
+
+```bash
+git add .
+git commit -m "Descrição das alterações"
+git push
+```
+
+## Notas adicionais
+
+- Caso queira trabalhar com colaboradores, você pode adicionar outros usuários como colaboradores nas configurações do repositório.
+- Para clonar este repositório em outro computador, use: `git clone https://github.com/SEU-USUARIO/chatbot-ollama-ts.git`
+- Se você estiver usando autenticação de dois fatores, precisará criar um token de acesso pessoal em vez de usar sua senha do GitHub. 
