@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Ollama</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar para histórico de conversas -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Histórico</h2>
+                <button id="new-chat-btn" class="icon-btn" title="Novo Chat">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+            <div id="chat-history" class="chat-history">
+                <!-- Histórico de chats será adicionado aqui dinamicamente -->
+            </div>
+        </aside>
+
+        <!-- Container principal do chat -->
+        <div class="chat-container">
+            <header class="chat-header">
+                <h1>Chat Ollama</h1>
+                <div class="header-controls">
+                    <button id="theme-toggle" class="icon-btn" title="Alternar Tema">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="delete-chat" class="icon-btn" title="Excluir Conversa">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            </header>
+            
+            <main class="chat-messages" id="chat-messages">
+                <!-- As mensagens serão inseridas aqui dinamicamente -->
+            </main>
+
+            <footer class="chat-input-area">
+                <form id="chat-form">
+                    <div class="input-container">
+                        <textarea 
+                            id="message-input" 
+                            placeholder="Digite sua mensagem..." 
+                            rows="1"
+                            autofocus
+                        ></textarea>
+                        <button type="submit" class="send-button">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </footer>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
